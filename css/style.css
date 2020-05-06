@@ -1,0 +1,94 @@
+body{
+	background: #F2F2F2;
+  height: 100%;
+}
+
+header {
+  min-height: 60px;
+  top: 0;
+  right: 0;
+  left: 0;
+  border-bottom: 1px solid #ccc;
+  background: #FFFFFF;
+  z-index: 2;
+}
+
+#login .container #login-row #login-column #login-box {
+  margin-top: 120px;
+  max-width: 600px;
+  height: 320px;
+  border: 1px solid #9C9C9C;
+  background-color: #EAEAEA;
+}
+#login .container #login-row #login-column #login-box #login-form {
+  padding: 20px;
+}
+#login .container #login-row #login-column #login-box #login-form #registrar {
+  margin-top: -20px;
+}
+
+
+#cadastrar .container #cadastrar-row #cadastrar-column #cadastrar-box {
+  margin-top: 120px;
+  max-width: 600px;
+  height: 400px;
+  border: 1px solid #9C9C9C;
+  background-color: #EAEAEA;
+}
+#cadastrar .container #cadastrar-row #cadastrar-column #cadastrar-box #cadastrar-form {
+  padding: 20px;
+}
+#cadastrar .container #cadastrar-row #cadastrar-column #cadastrar-box #cadastrar-form #registrar {
+  margin-top: -85px;
+}
+
+.logo-alinha{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.btn-info{
+	background-color:#DE0C39;
+
+}
+
+.livro-layout{
+  float: left;
+}
+
+.texto-livro{
+  width: 900px ;
+  height: 600px;
+}
+.header-text{
+  color: black;
+  font-size: 22px;
+  padding-right: 30px;
+}
+
+.perfil-lado{
+  float: left;
+  margin-top: 20px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #9C9C9C;
+  background-color: #FFFFFF;
+}
+
+
+.corpo-perfil{
+  float: left;
+  margin-top: 20px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #9C9C9C;
+  background-color: #FFFFFF;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar{
+  }
+  
+}

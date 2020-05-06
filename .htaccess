@@ -1,0 +1,161 @@
+# php -- BEGIN cPanel-generated handler, do not edit
+# Defina o pacote “ea-php70” como a linguagem padrão de programação “PHP”.
+<IfModule mime_module>
+  AddType application/x-httpd-ea-php70 .php .php7 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit
+
+Options -Indexes
+ErrorDocument 400 https://www.contabilivre.com.br/ops_400.php
+ErrorDocument 401 https://www.contabilivre.com.br/ops_401.php
+ErrorDocument 402 https://www.contabilivre.com.br/ops_402.php
+ErrorDocument 403 https://www.contabilivre.com.br/ops_403.php
+ErrorDocument 404 https://www.contabilivre.com.br/ops_404.php
+ErrorDocument 405 https://www.contabilivre.com.br/ops_405.php
+ErrorDocument 500 https://www.contabilivre.com.br/ops_500.php
+ErrorDocument 501 https://www.contabilivre.com.br/ops_501.php
+ErrorDocument 502 https://www.contabilivre.com.br/ops_502.php
+ErrorDocument 503 https://www.contabilivre.com.br/ops_503.php
+ErrorDocument 504 https://www.contabilivre.com.br/ops_504.php
+ErrorDocument 505 https://www.contabilivre.com.br/ops_505.php
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+
+#raiz
+RedirectMatch 301 ^/app/sistema/(.*)$ https://app.contabilivre.com.br/app/sistema/$1
+
+#categoria e tag
+RedirectMatch 301 ^/blog/(.*)$ http://news.contabilivre.com.br/$1
+RedirectMatch 301 ^/category/(.*)$ http://news.contabilivre.com.br/category/$1
+RedirectMatch 301 ^/tag/(.*)$ http://news.contabilivre.com.br/tag/$1
+
+#PHP's
+RewriteRule ^app/remover_email\.php$ https://app.contabilivre.com.br/app/remover_email.php [L,R=301]
+RewriteRule ^app/download_ebook\.php$ https://app.contabilivre.com.br/app/download_ebook.php [L,R=301]
+RewriteRule ^app/download_ebook_irpf\.php$ https://app.contabilivre.com.br/app/download_ebook_irpf.php [L,R=301]
+RewriteRule ^app/nossa_logo\.php$ https://app.contabilivre.com.br/app/nossa_logo.php [L,R=301]
+RewriteRule ^app/visualizar_conteudo\.php$ https://app.contabilivre.com.br/app/visualizar_conteudo.php [L,R=301]
+RewriteRule ^app/sistema/inicio\.php$ https://app.contabilivre.com.br/app/sistema/inicio.php [L,R=301]
+
+#Blog
+RewriteRule ^negocios-lucrativos$ http://news.contabilivre.com.br/negocios-lucrativos/ [L,R=301]
+RewriteRule ^indices-de-rentabilidade$ http://news.contabilivre.com.br/indices-de-rentabilidade/ [L,R=301]
+RewriteRule ^como-calcular-rescisao-contratual-de-funcionario$ http://news.contabilivre.com.br/como-calcular-rescisao-contratual-de-funcionario/ [L,R=301]
+RewriteRule ^como-fazer-um-balanco-patrimonial-simples-para-a-empresa$ http://news.contabilivre.com.br/como-fazer-um-balanco-patrimonial-simples-para-a-empresa/ [L,R=301]
+RewriteRule ^como-abrir-mei$ http://news.contabilivre.com.br/como-abrir-mei/ [L,R=301]
+RewriteRule ^contabilidade-financeira-e-gerencial-diferenca$ http://news.contabilivre.com.br/contabilidade-financeira-e-gerencial-diferenca/ [L,R=301]
+RewriteRule ^contabilidade-financeira-e-gerencial-diferenca$ http://news.contabilivre.com.br/contabilidade-financeira-e-gerencial-diferenca/ [L,R=301]
+RewriteRule ^saiba-o-que-sao-bens-intangiveis$ http://news.contabilivre.com.br/saiba-o-que-sao-bens-intangiveis/ [L,R=301]
+RewriteRule ^contabilidade-online-como-funciona$ http://news.contabilivre.com.br/contabilidade-online-como-funciona/ [L,R=301]
+RewriteRule ^trazer-contabilidade-para-contabilivre$ http://news.contabilivre.com.br/trazer-contabilidade-para-contabilivre/ [L,R=301]
+RewriteRule ^contabilidade-de-qualidade$ http://news.contabilivre.com.br/contabilidade-de-qualidade/ [L,R=301]
+RewriteRule ^quais-sao-as-mudancas-no-simples-nacional-para-2018$ http://news.contabilivre.com.br/quais-sao-as-mudancas-no-simples-nacional-para-2018/ [L,R=301]
+RewriteRule ^contador-online-ou-tradicional$ http://news.contabilivre.com.br/contador-online-ou-tradicional/ [L,R=301]
+RewriteRule ^contabilista-ou-contador-saiba-qual-a-diferenca-entre-os-dois-termos$ http://news.contabilivre.com.br/contabilista-ou-contador-saiba-qual-a-diferenca-entre-os-dois-termos/ [L,R=301]
+RewriteRule ^saiba-o-que-e-cnpj-e-como-abrir-um-para-sua-empresa$ http://news.contabilivre.com.br/saiba-o-que-e-cnpj-e-como-abrir-um-para-sua-empresa/ [L,R=301]
+RewriteRule ^freelancer-vale-a-pena$ http://news.contabilivre.com.br/freelancer-vale-a-pena/ [L,R=301]
+RewriteRule ^manter-as-contas-da-empresa-em-dia$ http://news.contabilivre.com.br/manter-as-contas-da-empresa-em-dia/ [L,R=301]
+RewriteRule ^mentoria-contabil$ http://news.contabilivre.com.br/mentoria-contabil/ [L,R=301]
+RewriteRule ^simples-nacional-compensa$ http://news.contabilivre.com.br/simples-nacional-compensa/ [L,R=301]
+RewriteRule ^contabilidade-online-migre-ja$ http://news.contabilivre.com.br/contabilidade-online-migre-ja/ [L,R=301]
+RewriteRule ^imposto-de-renda-pessoa-fisica$ http://news.contabilivre.com.br/imposto-de-renda-pessoa-fisica/ [L,R=301]
+RewriteRule ^mei-ultrapassei-o-limite-de-faturamento$ http://news.contabilivre.com.br/mei-ultrapassei-o-limite-de-faturamento/ [L,R=301]
+RewriteRule ^formato-juridico$ http://news.contabilivre.com.br/formato-juridico/ [L,R=301]
+RewriteRule ^regime-tributario$ http://news.contabilivre.com.br/regime-tributario/ [L,R=301]
+RewriteRule ^crise-5-dicas-para-empresas$ http://news.contabilivre.com.br/crise-5-dicas-para-empresas/ [L,R=301]
+RewriteRule ^simples-nacional-como-voltar$ http://news.contabilivre.com.br/simples-nacional-como-voltar/ [L,R=301]
+RewriteRule ^como-funciona-a-contabilidade-online$ http://news.contabilivre.com.br/como-funciona-a-contabilidade-online/ [L,R=301]
+RewriteRule ^contabilidade-para-startups$ http://news.contabilivre.com.br/contabilidade-para-startups/ [L,R=301]
+RewriteRule ^como-contratar-clt$ http://news.contabilivre.com.br/como-contratar-clt/ [L,R=301]
+RewriteRule ^aplicativos-para-empreendedores$ http://news.contabilivre.com.br/aplicativos-para-empreendedores/ [L,R=301]
+RewriteRule ^abrir-uma-empresa-voce-esta-pronto$ http://news.contabilivre.com.br/abrir-uma-empresa-voce-esta-pronto/ [L,R=301]
+RewriteRule ^abrir-empresa-com-endereco-residencial$ http://news.contabilivre.com.br/abrir-empresa-com-endereco-residencial/ [L,R=301]
+RewriteRule ^abrir-uma-empresa-tem-jeito-facil$ http://news.contabilivre.com.br/abrir-uma-empresa-tem-jeito-facil/ [L,R=301]
+RewriteRule ^abrir-um-cnpj$ http://news.contabilivre.com.br/abrir-um-cnpj/ [L,R=301]
+RewriteRule ^contabilidade-online-funciona$ http://news.contabilivre.com.br/contabilidade-online-funciona/ [L,R=301]
+RewriteRule ^como-abrir-uma-empresa-sem-dor-de-cabeca$ http://news.contabilivre.com.br/como-abrir-uma-empresa-sem-dor-de-cabeca/ [L,R=301]
+RewriteRule ^app-mei-aplicativo-da-receita-federal-exclusivo-para-o-mei$ http://news.contabilivre.com.br/app-mei-aplicativo-da-receita-federal-exclusivo-para-o-mei/ [L,R=301]
+RewriteRule ^ainda-bem-que-existe-o-stf$ http://news.contabilivre.com.br/ainda-bem-que-existe-o-stf/ [L,R=301]
+RewriteRule ^voce-pode-estar-excluido-do-simples-corra-que-ainda-da-tempo-de-voltar$ http://news.contabilivre.com.br/voce-pode-estar-excluido-do-simples-corra-que-ainda-da-tempo-de-voltar/ [L,R=301]
+RewriteRule ^o-pais-onde-mais-se-gasta-tempo-com-impostos$ http://news.contabilivre.com.br/o-pais-onde-mais-se-gasta-tempo-com-impostos/ [L,R=301]
+RewriteRule ^o-seu-bolso-nao-tem-nada-a-ver-com-a-crise$ http://news.contabilivre.com.br/o-seu-bolso-nao-tem-nada-a-ver-com-a-crise/ [L,R=301]
+RewriteRule ^uma-banana-para-o-e-commerce$ http://news.contabilivre.com.br/uma-banana-para-o-e-commerce/ [L,R=301]
+RewriteRule ^tudo-que-voce-precisa-saber-sobre-empregados-domesticos-no-brasil$ http://news.contabilivre.com.br/tudo-que-voce-precisa-saber-sobre-empregados-domesticos-no-brasil/ [L,R=301]
+RewriteRule ^internet-traz-vantagem-competitiva-para-microempresas$ http://news.contabilivre.com.br/internet-traz-vantagem-competitiva-para-microempresas/ [L,R=301]
+RewriteRule ^a-razao-para-a-complexidade-tributaria$ http://news.contabilivre.com.br/a-razao-para-a-complexidade-tributaria/ [L,R=301]
+RewriteRule ^a-restituicao-do-imposto-de-renda$ http://news.contabilivre.com.br/a-restituicao-do-imposto-de-renda/ [L,R=301]
+RewriteRule ^conseguiram-piorar-a-inutilidade-da-informacao-dos-impostos-na-nota-fiscal$ http://news.contabilivre.com.br/conseguiram-piorar-a-inutilidade-da-informacao-dos-impostos-na-nota-fiscal/ [L,R=301]
+RewriteRule ^voce-acredita-que-pode-estar-pagando-para-vender$ http://news.contabilivre.com.br/voce-acredita-que-pode-estar-pagando-para-vender/ [L,R=301]
+RewriteRule ^nao-abra-um-negocio-sem-conhecer-este-conceito$ http://news.contabilivre.com.br/nao-abra-um-negocio-sem-conhecer-este-conceito/ [L,R=301]
+RewriteRule ^cuidados-para-evitar-o-fluxo-de-caixa-negativo$ http://news.contabilivre.com.br/cuidados-para-evitar-o-fluxo-de-caixa-negativo/ [L,R=301]
+RewriteRule ^margem-de-contribuicao-por-que-e-determinante-para-o-seu-negocio$ http://news.contabilivre.com.br/margem-de-contribuicao-por-que-e-determinante-para-o-seu-negocio/ [L,R=301]
+RewriteRule ^a-unica-coisa-que-voce-precisa-saber-para-definir-seu-preco-de-venda$ http://news.contabilivre.com.br/a-unica-coisa-que-voce-precisa-saber-para-definir-seu-preco-de-venda/ [L,R=301]
+RewriteRule ^porque-sua-empresa-esta-patinando-na-busca-pelo-sucesso$ http://news.contabilivre.com.br/porque-sua-empresa-esta-patinando-na-busca-pelo-sucesso/ [L,R=301]
+RewriteRule ^porque-misturar-o-dinheiro-pessoal-com-o-do-negocio-pode-te-quebrar$ http://news.contabilivre.com.br/porque-misturar-o-dinheiro-pessoal-com-o-do-negocio-pode-te-quebrar/ [L,R=301]
+RewriteRule ^custo-de-oportunidade$ http://news.contabilivre.com.br/custo-de-oportunidade/ [L,R=301]
+RewriteRule ^o-que-voce-realmente-precisa-saber-sobre-o-regime-de-caixa$ http://news.contabilivre.com.br/o-que-voce-realmente-precisa-saber-sobre-o-regime-de-caixa/ [L,R=301]
+RewriteRule ^o-melhor-planejamento-tributario$ http://news.contabilivre.com.br/o-melhor-planejamento-tributario/ [L,R=301]
+RewriteRule ^o-que-voce-ja-devia-saber-sobre-emprestimos-bancarios$ http://news.contabilivre.com.br/o-que-voce-ja-devia-saber-sobre-emprestimos-bancarios/ [L,R=301]
+
+#Blog com /
+RewriteRule ^negocios-lucrativos/$ http://news.contabilivre.com.br/negocios-lucrativos/ [L,R=301]
+RewriteRule ^indices-de-rentabilidade/$ http://news.contabilivre.com.br/indices-de-rentabilidade/ [L,R=301]
+RewriteRule ^como-calcular-rescisao-contratual-de-funcionario/$ http://news.contabilivre.com.br/como-calcular-rescisao-contratual-de-funcionario/ [L,R=301]
+RewriteRule ^como-fazer-um-balanco-patrimonial-simples-para-a-empresa/$ http://news.contabilivre.com.br/como-fazer-um-balanco-patrimonial-simples-para-a-empresa/ [L,R=301]
+RewriteRule ^como-abrir-mei/$ http://news.contabilivre.com.br/como-abrir-mei/ [L,R=301]
+RewriteRule ^contabilidade-financeira-e-gerencial-diferenca/$ http://news.contabilivre.com.br/contabilidade-financeira-e-gerencial-diferenca/ [L,R=301]
+RewriteRule ^contabilidade-financeira-e-gerencial-diferenca/$ http://news.contabilivre.com.br/contabilidade-financeira-e-gerencial-diferenca/ [L,R=301]
+RewriteRule ^saiba-o-que-sao-bens-intangiveis/$ http://news.contabilivre.com.br/saiba-o-que-sao-bens-intangiveis/ [L,R=301]
+RewriteRule ^contabilidade-online-como-funciona/$ http://news.contabilivre.com.br/contabilidade-online-como-funciona/ [L,R=301]
+RewriteRule ^trazer-contabilidade-para-contabilivre/$ http://news.contabilivre.com.br/trazer-contabilidade-para-contabilivre/ [L,R=301]
+RewriteRule ^contabilidade-de-qualidade/$ http://news.contabilivre.com.br/contabilidade-de-qualidade/ [L,R=301]
+RewriteRule ^quais-sao-as-mudancas-no-simples-nacional-para-2018/$ http://news.contabilivre.com.br/quais-sao-as-mudancas-no-simples-nacional-para-2018/ [L,R=301]
+RewriteRule ^contador-online-ou-tradicional/$ http://news.contabilivre.com.br/contador-online-ou-tradicional/ [L,R=301]
+RewriteRule ^contabilista-ou-contador-saiba-qual-a-diferenca-entre-os-dois-termos/$ http://news.contabilivre.com.br/contabilista-ou-contador-saiba-qual-a-diferenca-entre-os-dois-termos/ [L,R=301]
+RewriteRule ^saiba-o-que-e-cnpj-e-como-abrir-um-para-sua-empresa/$ http://news.contabilivre.com.br/saiba-o-que-e-cnpj-e-como-abrir-um-para-sua-empresa/ [L,R=301]
+RewriteRule ^freelancer-vale-a-pena/$ http://news.contabilivre.com.br/freelancer-vale-a-pena/ [L,R=301]
+RewriteRule ^manter-as-contas-da-empresa-em-dia/$ http://news.contabilivre.com.br/manter-as-contas-da-empresa-em-dia/ [L,R=301]
+RewriteRule ^mentoria-contabil/$ http://news.contabilivre.com.br/mentoria-contabil/ [L,R=301]
+RewriteRule ^simples-nacional-compensa/$ http://news.contabilivre.com.br/simples-nacional-compensa/ [L,R=301]
+RewriteRule ^contabilidade-online-migre-ja/$ http://news.contabilivre.com.br/contabilidade-online-migre-ja/ [L,R=301]
+RewriteRule ^imposto-de-renda-pessoa-fisica/$ http://news.contabilivre.com.br/imposto-de-renda-pessoa-fisica/ [L,R=301]
+RewriteRule ^mei-ultrapassei-o-limite-de-faturamento/$ http://news.contabilivre.com.br/mei-ultrapassei-o-limite-de-faturamento/ [L,R=301]
+RewriteRule ^formato-juridico/$ http://news.contabilivre.com.br/formato-juridico/ [L,R=301]
+RewriteRule ^regime-tributario/$ http://news.contabilivre.com.br/regime-tributario/ [L,R=301]
+RewriteRule ^crise-5-dicas-para-empresas/$ http://news.contabilivre.com.br/crise-5-dicas-para-empresas/ [L,R=301]
+RewriteRule ^simples-nacional-como-voltar/$ http://news.contabilivre.com.br/simples-nacional-como-voltar/ [L,R=301]
+RewriteRule ^como-funciona-a-contabilidade-online/$ http://news.contabilivre.com.br/como-funciona-a-contabilidade-online/ [L,R=301]
+RewriteRule ^contabilidade-para-startups/$ http://news.contabilivre.com.br/contabilidade-para-startups/ [L,R=301]
+RewriteRule ^como-contratar-clt/$ http://news.contabilivre.com.br/como-contratar-clt/ [L,R=301]
+RewriteRule ^aplicativos-para-empreendedores/$ http://news.contabilivre.com.br/aplicativos-para-empreendedores/ [L,R=301]
+RewriteRule ^abrir-uma-empresa-voce-esta-pronto/$ http://news.contabilivre.com.br/abrir-uma-empresa-voce-esta-pronto/ [L,R=301]
+RewriteRule ^abrir-empresa-com-endereco-residencial/$ http://news.contabilivre.com.br/abrir-empresa-com-endereco-residencial/ [L,R=301]
+RewriteRule ^abrir-uma-empresa-tem-jeito-facil/$ http://news.contabilivre.com.br/abrir-uma-empresa-tem-jeito-facil/ [L,R=301]
+RewriteRule ^abrir-um-cnpj/$ http://news.contabilivre.com.br/abrir-um-cnpj/ [L,R=301]
+RewriteRule ^contabilidade-online-funciona/$ http://news.contabilivre.com.br/contabilidade-online-funciona/ [L,R=301]
+RewriteRule ^como-abrir-uma-empresa-sem-dor-de-cabeca/$ http://news.contabilivre.com.br/como-abrir-uma-empresa-sem-dor-de-cabeca/ [L,R=301]
+RewriteRule ^app-mei-aplicativo-da-receita-federal-exclusivo-para-o-mei/$ http://news.contabilivre.com.br/app-mei-aplicativo-da-receita-federal-exclusivo-para-o-mei/ [L,R=301]
+RewriteRule ^ainda-bem-que-existe-o-stf/$ http://news.contabilivre.com.br/ainda-bem-que-existe-o-stf/ [L,R=301]
+RewriteRule ^voce-pode-estar-excluido-do-simples-corra-que-ainda-da-tempo-de-voltar/$ http://news.contabilivre.com.br/voce-pode-estar-excluido-do-simples-corra-que-ainda-da-tempo-de-voltar/ [L,R=301]
+RewriteRule ^o-pais-onde-mais-se-gasta-tempo-com-impostos/$ http://news.contabilivre.com.br/o-pais-onde-mais-se-gasta-tempo-com-impostos/ [L,R=301]
+RewriteRule ^o-seu-bolso-nao-tem-nada-a-ver-com-a-crise/$ http://news.contabilivre.com.br/o-seu-bolso-nao-tem-nada-a-ver-com-a-crise/ [L,R=301]
+RewriteRule ^uma-banana-para-o-e-commerce/$ http://news.contabilivre.com.br/uma-banana-para-o-e-commerce/ [L,R=301]
+RewriteRule ^tudo-que-voce-precisa-saber-sobre-empregados-domesticos-no-brasil/$ http://news.contabilivre.com.br/tudo-que-voce-precisa-saber-sobre-empregados-domesticos-no-brasil/ [L,R=301]
+RewriteRule ^internet-traz-vantagem-competitiva-para-microempresas/$ http://news.contabilivre.com.br/internet-traz-vantagem-competitiva-para-microempresas/ [L,R=301]
+RewriteRule ^a-razao-para-a-complexidade-tributaria/$ http://news.contabilivre.com.br/a-razao-para-a-complexidade-tributaria/ [L,R=301]
+RewriteRule ^a-restituicao-do-imposto-de-renda/$ http://news.contabilivre.com.br/a-restituicao-do-imposto-de-renda/ [L,R=301]
+RewriteRule ^conseguiram-piorar-a-inutilidade-da-informacao-dos-impostos-na-nota-fiscal/$ http://news.contabilivre.com.br/conseguiram-piorar-a-inutilidade-da-informacao-dos-impostos-na-nota-fiscal/ [L,R=301]
+RewriteRule ^voce-acredita-que-pode-estar-pagando-para-vender/$ http://news.contabilivre.com.br/voce-acredita-que-pode-estar-pagando-para-vender/ [L,R=301]
+RewriteRule ^nao-abra-um-negocio-sem-conhecer-este-conceito/$ http://news.contabilivre.com.br/nao-abra-um-negocio-sem-conhecer-este-conceito/ [L,R=301]
+RewriteRule ^cuidados-para-evitar-o-fluxo-de-caixa-negativo/$ http://news.contabilivre.com.br/cuidados-para-evitar-o-fluxo-de-caixa-negativo/ [L,R=301]
+RewriteRule ^margem-de-contribuicao-por-que-e-determinante-para-o-seu-negocio/$ http://news.contabilivre.com.br/margem-de-contribuicao-por-que-e-determinante-para-o-seu-negocio/ [L,R=301]
+RewriteRule ^a-unica-coisa-que-voce-precisa-saber-para-definir-seu-preco-de-venda/$ http://news.contabilivre.com.br/a-unica-coisa-que-voce-precisa-saber-para-definir-seu-preco-de-venda/ [L,R=301]
+RewriteRule ^porque-sua-empresa-esta-patinando-na-busca-pelo-sucesso/$ http://news.contabilivre.com.br/porque-sua-empresa-esta-patinando-na-busca-pelo-sucesso/ [L,R=301]
+RewriteRule ^porque-misturar-o-dinheiro-pessoal-com-o-do-negocio-pode-te-quebrar/$ http://news.contabilivre.com.br/porque-misturar-o-dinheiro-pessoal-com-o-do-negocio-pode-te-quebrar/ [L,R=301]
+RewriteRule ^custo-de-oportunidade/$ http://news.contabilivre.com.br/custo-de-oportunidade/ [L,R=301]
+RewriteRule ^o-que-voce-realmente-precisa-saber-sobre-o-regime-de-caixa/$ http://news.contabilivre.com.br/o-que-voce-realmente-precisa-saber-sobre-o-regime-de-caixa/ [L,R=301]
+RewriteRule ^o-melhor-planejamento-tributario/$ http://news.contabilivre.com.br/o-melhor-planejamento-tributario/ [L,R=301]
+RewriteRule ^o-que-voce-ja-devia-saber-sobre-emprestimos-bancarios/$ http://news.contabilivre.com.br/o-que-voce-ja-devia-saber-sobre-emprestimos-bancarios/ [L,R=301]
+</IfModule>
